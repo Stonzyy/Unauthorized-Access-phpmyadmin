@@ -3,7 +3,7 @@ id: Unauthorized-Access-phpmyadmin
 info:
   name: Unauthorized Access to phpmyadmin
   author: Nasser Ben Hassen
-  severity: medium
+  severity: high
   tags: misconfiguration
   reference:
     - https://cwe.mitre.org/data/definitions/200.html
