@@ -1,0 +1,21 @@
+id: Unauthorized-Access-phpmyadmin
+
+info:
+  name: Unauthorized Access to phpmyadmin
+  author: Nasser Ben Hassen
+  severity: medium
+  tags: misconfiguration
+  reference:
+    - https://cwe.mitre.org/data/definitions/200.html
+
+requests:
+  - method: GET
+    path:
+      - "{{BaseURL}}/pma/setup/index.php"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        condition: and
+        words:
+          - 'Overview'
