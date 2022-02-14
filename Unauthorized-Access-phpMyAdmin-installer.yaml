@@ -18,4 +18,4 @@ requests:
       - type: word
         condition: and
         words:
-          - 'Overview'
+          - 'phpMyAdmin'
